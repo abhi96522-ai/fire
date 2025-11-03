@@ -1,14 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Cloud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Arduino Cloud</a>
+            </div>
+            <div class="nav-wrapper">
+              <nav>
+                  <ul>
+                      <li><a href="#">Things</a></li>
+                      <li><a href="#">Dashboards</a></li>
+                      <li><a href="#">Devices</a></li>
+                      <li><a href="#">Integrations</a></li>
+                      <li><a href="#">Templates</a></li>
+                  </ul>
+              </nav>
+              <div class="actions">
+                  <a href="#" class="login-btn">Log In</a>
+                  <a href="#" class="signup-btn">Sign Up</a>
+              </div>
+            </div>
+            <button class="menu-toggle">
+                <i class="material-icons">menu</i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>The all-in-one IoT platform</h1>
+            <p>Develop, deploy, and manage your connected devices at scale. Arduino Cloud provides a unified solution for all your IoT needs.</p>
+            <a href="#" class="cta-btn">Get Started for Free</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>A complete, secure and robust platform</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="material-icons">cloud</i>
+                    <h3>Cloud-based</h3>
+                    <p>Access your projects from anywhere in the world. No need to have your hardware with you.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="material-icons">code</i>
+                    <h3>Easy to code</h3>
+                    <p>Use our Web Editor and templates to get started in minutes. No installation required.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="material-icons">devices</i>
+                    <h3>Manage your devices</h3>
+                    <p>Keep your devices up-to-date with over-the-air updates and remote management.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="material-icons">dashboard</i>
+                    <h3>Beautiful dashboards</h3>
+                    <p>Visualize your data with a wide range of widgets and create stunning dashboards.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="material-icons">extension</i>
+                    <h3>Integrations</h3>
+                    <p>Connect your projects to third-party services like Alexa, Google Home, and IFTTT.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="material-icons">security</i>
+                    <h3>Secure by design</h3>
+                    <p>Your data is safe with us. We use industry-standard security protocols to protect your projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How it works</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="material-icons">developer_board</i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>1. Select your hardware</h3>
+                        <p>Choose from a wide range of Arduino, ESP32 and ESP8266 boards.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2. Code your project</h3>
+                        <p>Use the online editor to write and upload your code, or use our templates.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="material-icons">code</i>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="material-icons">dashboard</i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>3. Build your dashboard</h3>
+                        <p>Create a beautiful dashboard to control and monitor your project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Arduino. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

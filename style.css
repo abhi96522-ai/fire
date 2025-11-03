@@ -1,1 +1,308 @@
-/* Add styles here */
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f7f8fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #00878f;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: #00878f;
+}
+
+.signup-btn {
+    background-color: #00878f;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    color: #005662;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #00878f;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #005662;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #005662;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.feature-card i {
+    font-size: 48px;
+    color: #00878f;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #005662;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* How it Works Section */
+.how-it-works {
+    padding: 80px 0;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: #005662;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+    transform: translateY(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    position: relative;
+}
+
+.timeline-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #00878f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 36px;
+    z-index: 1;
+}
+
+.timeline-content {
+    padding: 0 20px;
+}
+
+.timeline-item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+/* Footer */
+footer {
+    background-color: #005662;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+    }
+
+    .nav-wrapper.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .actions {
+        margin-top: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .features h2 {
+      font-size: 32px;
+    }
+
+    .how-it-works h2 {
+      font-size: 32px;
+    }
+
+    .timeline {
+        flex-direction: column;
+    }
+
+    .timeline::before {
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item:nth-child(2) {
+        flex-direction: row;
+    }
+}
